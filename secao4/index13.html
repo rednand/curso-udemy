@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção 4 - aula 13</title>
+</head>
+<body>
+
+    <h1>
+        Seção 4 - aula 13
+    </h1>
+
+    <script>
+        //escopo de variaveis
+
+        function somar(num1,num2){
+            //variavel local (só é reconhecido dentro do bloco da função)
+            var valor = 5
+        return valor + num1+ num2;
+        }
+
+        for(var i = 0;i<5;i++){
+            var outra = 5;
+            console.log(i*outra);
+        }
+
+        console.log(somar(4,6));
+        //console.log(valor); //erro
+
+        console.log(outra); //temos acesso pois foi declarada em bloco for
+
+        for(var j=0; j<5; j++){
+            let uma = 12;// variavel local pois é let
+            console.log(j*uma);
+        }
+
+        console.log(uma);//referenceError
+        console.log(j);
+    
+
+    </script>
+    
+</body>
+</html>
